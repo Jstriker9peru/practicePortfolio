@@ -1,0 +1,285 @@
+#portfolio {
+    padding: 80px 15px;
+}
+
+#portfolio .title {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#portfolio .title .square {
+    background: #ffeded;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 23px;
+}
+
+#portfolio .title h1 {
+    position: relative;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #16171b;
+    z-index: 1;
+    letter-spacing: 4px;
+}
+
+#portfolio .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 50px 90px 10px 30px 140px;
+    grid-gap: 10px;
+}
+
+#portfolio .portfolio-container .box {
+    background: black;
+    display: block;
+    transition: all .4s ease-in-out;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+
+#portfolio .portfolio-container .box:hover {
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 40px 74px 24px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 40px 74px 24px rgba(0,0,0,0.08);
+    box-shadow: 0px 40px 74px 24px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+
+#portfolio .portfolio-container .box .image .hover-bg {
+    background: rgba(255, 255, 255, 0);
+    padding: 10px 20px;
+    transition: all .4s ease-in-out;
+    width: 100%;
+    height: 100%;     
+}
+
+#portfolio .portfolio-container .box:hover .image .hover-bg {
+    background: rgba(255, 53, 53, 0.8);
+    padding: 10px 20px; 
+}
+
+#portfolio .portfolio-container .box .image .hover-bg .title {
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .portfolio-container .box .image .hover-bg .title .text{
+    background: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transform: translate3d(0, 400px, 0);
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+
+#portfolio .portfolio-container .box:hover .image .hover-bg .title .text{
+    background: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+/* Box Locations */
+
+#portfolio .portfolio-container .image1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+#portfolio .portfolio-container .image1 .image {
+    background: url('https://www.planwallpaper.com/static/images/tree-on-a-moonlight-twitter-background.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 20% 30%;
+    background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .image2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+}
+
+#portfolio .portfolio-container .image2 .image {
+    background: url('https://i.pinimg.com/originals/2b/92/4c/2b924c38ce610e2274d56897b06a8b42.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .image3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 6;
+}
+
+#portfolio .portfolio-container .image3 .image {
+    background: url('https://movies-b26f.kxcdn.com/wp-content/uploads/2018/04/Interstellar-770x470.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .image4 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 7;
+}
+
+#portfolio .portfolio-container .image4 .image {
+    background: url('https://blazepress.com/.image/t_share/MTM1ODgwOTAzMDgyNzAwNzcw/50-most-beautiful-cinematic-shots-2jpg.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .image5 {
+    grid-column: 1 / 2;
+    grid-row: 6 / 8;
+}
+
+#portfolio .portfolio-container .image5 .image {
+    background: url('https://wallpaper-house.com/data/out/10/wallpaper2you_453655.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .image6 {
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+}
+
+#portfolio .portfolio-container .image6 .image {
+    background: url('http://www.cuded.com/wp-content/uploads/2013/06/4-cool-background.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#portfolio .portfolio-container .image7 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 8;
+}
+
+#portfolio .portfolio-container .image7 .image {
+    background: url('https://i.ytimg.com/vi/I4Xmm4mtyHw/maxresdefault.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+    #portfolio .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8, 100px);
+        grid-gap: 10px;
+    }
+
+    #portfolio .portfolio-container .image1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
+    #portfolio .portfolio-container .image2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    #portfolio .portfolio-container .image3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 5;
+    }
+
+    #portfolio .portfolio-container .image4 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 5;
+    }
+
+    #portfolio .portfolio-container .image5 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 7;
+    }
+
+    #portfolio .portfolio-container .image6 {
+        grid-column: 2 / 3;
+        grid-row: 5 / 7;
+    }
+
+    #portfolio .portfolio-container .image7 {
+        grid-column: 1 / 2;
+        grid-row: 7 / 9;
+    }
+}
+
+/* Phones */
+@media only screen and (max-width: 767px) {
+    #portfolio .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(7, 100px);
+        grid-gap: 10px;
+    }
+
+    #portfolio .portfolio-container .image1 {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+
+    #portfolio .portfolio-container .image2 {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+
+    #portfolio .portfolio-container .image3 {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+
+    #portfolio .portfolio-container .image4 {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+    }
+
+    #portfolio .portfolio-container .image5 {
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+    }
+
+    #portfolio .portfolio-container .image6 {
+        grid-column: 1 / 4;
+        grid-row: 6 / 7;
+    }
+
+    #portfolio .portfolio-container .image7 {
+        grid-column: 1 / 4;
+        grid-row: 7 / 8;
+    }
+}
+
+
